@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
@@ -14,6 +17,10 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		
+		<script src="javascript/converter.js"></script>
+		
+
+
 		<title>RGB - HEX Converter | by Bakku (www.github.com/bakku)</title>
 	</head>
 	
@@ -34,22 +41,22 @@
 						
 						<div class="input-group">
 							<span class="input-group-addon">#</span>
-							<input type="text" class="form-control" placeholder="000000">
+							<input id="hex-to-rgb-input" type="text" class="form-control" placeholder="000000">
 							<span class="input-group-btn">
-								<button class="btn btn-success btn-width" type="button">Convert!</button>
+								<button id="hex-to-rgb-convert" class="btn btn-success btn-width" type="button">Convert!</button>
 							</span>
 						</div>
 						
 						<div class="input-group result">
 							<span class="input-group-addon">rgb(</span>
-							<input type="text" class="form-control" placeholder="0, 0, 0" disabled>
+							<input id="hex-to-rgb-result" type="text" class="form-control" placeholder="0, 0, 0" disabled>
 							<span class="input-group-addon">)</span>
 							<span class="input-group-btn">
-								<button class="btn btn-success btn-width" type="button">Copy!</button>
+								<button id="hex-to-rgb-copy" class="btn btn-success btn-width" type="button">Copy!</button>
 							</span>
 						</div>
 					
-						<div id="result-color" class="result">
+						<div id="hex-to-rgb-color" class="result-color result">
 						
 						</div>
 					</div>
@@ -78,7 +85,7 @@
 							</span>
 						</div>
 					
-						<div id="result-color" class="result">
+						<div id="" class="result-color result">
 						
 						</div>
 					</div>
