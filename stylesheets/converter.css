@@ -6,17 +6,20 @@
 }
 
 .custom-nav {
-	margin-bottom: 0px;
+
 }
 
 .fixed-width {
 	width: 1000px;
 }
 
+.half-size {
+	width: 490px;
+}
+
 #heading {
 	font-size: 25px;
 	font-weight: 100;
-	font-family: 'Open Sans';
 }
 
 .palette {
@@ -25,3 +28,21 @@
 	margin-right: 10px;
 }
 
+.zero-padding {
+	padding: 0px;
+}
+
+.custom-text {
+	font-family: 'Open Sans';
+}
+
+.panel-heading {
+	font-weight: 100;
+	color: #777;
+	font-size: 20px;
+	text-align: left;
+	padding-top: 0px;
+	margin-top: 3px;
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(119, 119, 119, 0.3);
+}
