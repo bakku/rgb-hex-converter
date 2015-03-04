@@ -14,7 +14,14 @@
 }
 
 #heading {
-	font-size: 20px;
+	font-size: 25px;
+	font-weight: 100;
+	font-family: 'Open Sans';
 }
 
+.palette {
+	width: 59px;
+	height: 59px;
+	margin-right: 10px;
+}
 
