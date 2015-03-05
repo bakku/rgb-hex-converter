@@ -22,6 +22,25 @@ $( document ).ready(function() {
 		$('#hex-to-rgb-icon').addClass('icon-visible');
 	});
 	
+	$('#rgb-to-hex-convert').click(function() {
+		var regEx = /^[0-9][0-9]?[0-9]?,\s?[0-9][0-9]?[0-9]?,\s?[0-9][0-9]?[0-9]?$/;
+		var color = $('#rgb-to-hex-input').val();
+		var result;
+		
+		if (regEx.test(color) == false) {
+			$('#rgb-to-hex-group').addClass('has-error');
+			$('#rgb-to-hex-icon').removeClass('icon-visible');
+			return;
+		}
+		
+		var rgb = "rgb(";
+		var end = ")";
+		var bgcolor = rgb.concat(color).concat(end);
+		
+		$('#rgb-to-hex-color').css('background-color', bgcolor);
+		$('#rgb-to-hex-group').removeClass('has-error');
+		$('#rgb-to-hex-icon').addClass('icon-visible');
+	});
 });
 
 function hexToRgb(color) {
