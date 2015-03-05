@@ -80,3 +80,12 @@
 	color: #777;
 	text-decoration: underline;
 }
+
+.input-icon {
+	position: absolute;
+	left:320px;
+}
+
+.icon-visible {
+	visibility: hidden;
+}
