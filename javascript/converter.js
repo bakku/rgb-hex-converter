@@ -8,6 +8,7 @@ $( document ).ready(function() {
 		if (regEx.test(color) == false) {
 			$('#hex-to-rgb-group').addClass('has-error');
 			$('#hex-to-rgb-icon').removeClass('icon-visible');
+			return;
 		}
 		
 		result = hexToRgb(color);

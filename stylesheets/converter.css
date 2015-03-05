@@ -81,11 +81,16 @@
 	text-decoration: underline;
 }
 
-.input-icon {
+#hex-to-rgb-icon {
 	position: absolute;
 	left:320px;
 }
 
 .icon-visible {
 	visibility: hidden;
+}
+
+#rgb-to-hex-icon {
+	position: absolute;
+	left:290px;
 }
