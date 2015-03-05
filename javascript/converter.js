@@ -33,15 +33,53 @@ $( document ).ready(function() {
 			return;
 		}
 		
+		result = rgbToHex(color);
+		
 		var rgb = "rgb(";
 		var end = ")";
 		var bgcolor = rgb.concat(color).concat(end);
 		
+		$('#rgb-to-hex-result').val(result);
 		$('#rgb-to-hex-color').css('background-color', bgcolor);
 		$('#rgb-to-hex-group').removeClass('has-error');
 		$('#rgb-to-hex-icon').addClass('icon-visible');
 	});
 });
+
+function rgbToHex(color) {
+	var rVal;
+	var gVal;
+	var bVal;
+	
+	var colors = color.split(",");
+	
+	rVal = parseInt(colors[0].trim());
+	
+	if (rVal > 255) {
+		rVal = 255;
+	}
+	rVal = rVal.toString(16);
+	
+	gVal = parseInt(colors[1].trim());
+	
+	if (gVal > 255) {
+		gVal = 255;
+	}
+	gVal = gVal.toString(16);
+	
+	bVal = parseInt(colors[2].trim());
+	
+	if (bVal > 255) {
+		bVal = 255;
+	}
+	bVal = bVal.toString(16);
+	
+	if (rVal.length == 1) {
+		rVal = "0" + rVal;
+	}
+	
+	return rVal + gVal + bVal;
+}
 
 function hexToRgb(color) {
 		var rVal;
