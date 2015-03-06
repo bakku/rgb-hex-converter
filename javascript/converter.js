@@ -77,6 +77,14 @@ function rgbToHex(color) {
 	if (rVal.length == 1) {
 		rVal = "0" + rVal;
 	}
+
+	if (gVal.length == 1) {
+		gVal = "0" + gVal;
+	}
+
+	if (bVal.length == 1) {
+		bVal = "0" + bVal;
+	}
 	
 	return rVal + gVal + bVal;
 }

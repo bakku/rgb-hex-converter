@@ -18,8 +18,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		
 		<script src="javascript/converter.js"></script>
-		
-
 
 		<title>RGB - HEX Converter | by Bakku (www.github.com/bakku)</title>
 	</head>
@@ -50,11 +48,8 @@
 						
 						<div class="input-group result">
 							<span class="input-group-addon">rgb(</span>
-							<input id="hex-to-rgb-result" type="text" class="form-control" placeholder="0, 0, 0" disabled>
+							<input id="hex-to-rgb-result" type="text" class="form-control" placeholder="0, 0, 0" readonly>
 							<span class="input-group-addon">)</span>
-							<span class="input-group-btn">
-								<button id="hex-to-rgb-copy" class="btn btn-success btn-width" type="button">Copy!</button>
-							</span>
 						</div>
 					
 						<div id="hex-to-rgb-color" class="result-color result">
@@ -81,10 +76,7 @@
 
 						<div class="input-group result">
 							<span class="input-group-addon">#</span>
-							<input id="rgb-to-hex-result" type="text" class="form-control" disabled>
-							<span class="input-group-btn">
-								<button class="btn btn-success btn-width" type="button">Copy!</button>
-							</span>
+							<input id="rgb-to-hex-result" type="text" class="form-control" placeholder="000000" readonly>
 						</div>
 					
 						<div id="rgb-to-hex-color" class="result-color result">
